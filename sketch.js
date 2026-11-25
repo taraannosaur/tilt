@@ -17,8 +17,8 @@ function setup() {
 function draw() {
   background(220);
 
-  me.x += map(me.rotationX, -180, 180, -maxSpeed, maxSpeed);
-  me.y += map(me.rotationY, -180, 180, -maxSpeed, maxSpeed);
+  me.x += map(rotationX, -180, 180, -maxSpeed, maxSpeed);
+  me.y += map(rotationY, -180, 180, -maxSpeed, maxSpeed);
 
   for (let i = 0; i < guests.length; i++) {
     let g = guests[i];
